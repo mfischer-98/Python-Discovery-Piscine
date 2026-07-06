@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-# print("Enter a number:")
-number = int(input())
+
+number = input()
 
 if number == 0:
     print("This number is equal to zero.")
