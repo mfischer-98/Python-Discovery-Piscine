@@ -1,14 +1,9 @@
 #!/usr/bin/env python3
 
-""" try:
-    age = int(input("Please tell me your age: "))
+age = int(input("Please tell me your age: "))
+if age < 0:
+    print("Error\nInvalid age number.")
+else:
     print("In 10 years, you'll be", age + 10, "years old.")
     print("In 20 years, you'll be", age + 20, "years old.")
     print("In 30 years, you'll be", age + 30, "years old.")
-except ValueError as err:
-    print(f"{err}") """
-
-age = int(input("Please tell me your age: "))
-print("In 10 years, you'll be", age + 10, "years old.")
-print("In 20 years, you'll be", age + 20, "years old.")
-print("In 30 years, you'll be", age + 30, "years old.")

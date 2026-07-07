@@ -6,5 +6,8 @@ print("Thank you!")
 
 print(f"{first} + {second} = {first + second}")
 print(f"{first} - {second} = {first - second}")
-print(f"{first} / {second} = {first // second}")
+if second != 0:
+    print(f"{first} / {second} = {first // second}")
+else:
+    print("Number cannot be divided by zero.")
 print(f"{first} * {second} = {first * second}")
