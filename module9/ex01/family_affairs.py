@@ -5,8 +5,10 @@
 # dupont_dict.items() = pairs
 # item[0] = name
 # item [1] = hair color
-def find_the_redheads(dupont_dict):
-	return(list(filter(lambda item: item[0] == "red", dupont_dict.items())))
+
+def find_the_redheads(family_dict):
+	reds = filter(lambda i: "red" in i[1], family_dict.items())
+	return list(name for name, hair, in reds)
 
 dupont_family = {
 "florian": "red",
