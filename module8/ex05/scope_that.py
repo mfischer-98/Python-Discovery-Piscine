@@ -6,5 +6,6 @@ def add_one(p):
 
 n = 1
 print(n)
-#print(add_one(n))
+add_one(n)
+# print(add_one(n))
 print(n)

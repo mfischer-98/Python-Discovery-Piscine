@@ -6,5 +6,8 @@ def downcase_it(text):
 
 args = sys.argv[1:]
 
+if len(args) < 1:
+	print("none")
+
 for word in args:
 	print(downcase_it(word))

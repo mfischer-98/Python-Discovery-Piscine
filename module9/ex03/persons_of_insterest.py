@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
-def famous_births(figures_dict)
-	print()
+def famous_births(figures_dict):
+	sorted_dict = sorted(figures_dict.values(), key=lambda i: i["date_of_birth"])
+	for person in sorted_dict:
+		print(person["name"] + " is a great scientist born in " + person["date_of_birth"])
 
 women_scientists = {
 "ada": { "name": "Ada Lovelace", "date_of_birth": "1815" },
@@ -9,4 +11,5 @@ women_scientists = {
 "lise": { "name": "Lise Meitner", "date_of_birth": "1878" },
 "grace": { "name": "Grace Hopper", "date_of_birth": "1906" }
 }
+
 famous_births(women_scientists)

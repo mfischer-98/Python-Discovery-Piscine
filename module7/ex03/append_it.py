@@ -3,7 +3,7 @@ import sys
 
 param = sys.argv[1:]
 
-if len(param) < 2:
+if len(param) < 1:
 	print("none")
 else:
 	for word in param:

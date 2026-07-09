@@ -8,4 +8,7 @@ if len(param) != 3:
     print("none")
 else:
     result = re.findall(param[1],param[2])
-    print(len(result))
+    if len(result) > 0:
+        print(len(result))
+    else:
+        print("none")
