@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 def famous_births(figures_dict):
-	sorted_dict = sorted(figures_dict.values(), key=lambda i: i["date_of_birth"])
+	sorted_dict = sorted(figures_dict.values(), key=lambda i: int(i["date_of_birth"]))
 	for person in sorted_dict:
 		print(person["name"] + " is a great scientist born in " + person["date_of_birth"])
 
